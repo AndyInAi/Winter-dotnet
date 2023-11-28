@@ -15,10 +15,8 @@ apt update -y
 
 apt install -y wget
 
-declare repo_version=22.04
-
 wget -O ~/packages-microsoft-prod.deb \
-        https://packages.microsoft.com/config/ubuntu/$repo_version/packages-microsoft-prod.deb
+        https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
 
 dpkg -i ~/packages-microsoft-prod.deb
 
